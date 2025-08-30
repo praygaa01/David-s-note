@@ -109,8 +109,54 @@
       .page{ box-shadow:none; }
       .toolbar{ display:none; }
       .codes{ columns: 3; }
+
     }
   </style>
+
+  <style>
+    .quote-section {
+      background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
+      color: #f1f1f1;
+      padding: 30px 50px;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .quote-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      border-left: 5px solid #ffcc00;
+      border-right: 5px solid #ffcc00;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+    }
+
+    .quote-text {
+      font-size: 1.4rem;
+      font-style: sans-serif;
+      line-height: 1.6;
+    }
+
+    .quote-author {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    /* Responsif */
+    @media (max-width: 600px) {
+      .quote-text {
+        font-size: 1rem;
+      }
+      .quote-author {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+
 </head>
 <body>
   <div class="page" id="page">
@@ -142,6 +188,7 @@
         <p class="mono"><em>"You have the right to remain silent. Anything you say can and will be used against you in the court of law. You have the right to an attorney. If you cannot afford one, one will be provided for you."</em></p>
       </div>
     </section>
+
 
     <!-- Ten Codes -->
     <section>
@@ -262,6 +309,73 @@
         <li><b>Solo (LINCOLN)</b> — <span class="mono">71-Lincoln-72</span> <br><small>Using <b>71</b> as the station callsign (per SPV note).</small></li>
         <li><b>With Partner (ADAM)</b> — <span class="mono">71-Adam-72</span></li>
       </ul>
+    </section>
+
+    <section class="p-6 max-w-3xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Pursuit Behavior</h2>
+      
+      <h3 class="text-xl font-semibold mt-4">Unit Roles</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>Primary Unit</strong> — Mobil utama yang akan mengejar.</li>
+        <li><strong>Secondary Unit</strong> — Membantu komunikasi dan call-out.</li>
+        <li><strong>Alternate Unit</strong> — Siap untuk block road atau deploy spike strip.</li>
+      </ul>
+    
+      <h3 class="text-xl font-semibold mt-6">Selama Pengejaran</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Memberikan update berkala (arah, kecepatan, situasi lalu lintas).</li>
+        <li>Menjaga jarak aman dan tidak saling menabrak.</li>
+      </ul>
+    
+      <h3 class="text-xl font-semibold mt-6">Taktik Khusus</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li><strong>Spike Strip</strong></li>
+        <li><strong>PIT Maneuver</strong></li>
+        <li><strong>Box Car</strong></li>
+      </ul>
+      <p class="mt-2 text-gray-700">
+        Hanya boleh dilakukan dengan izin dari <strong>IC</strong> atau <strong>Sergeant</strong>.
+      </p>
+    </section>
+    <section id="ic-guidelines" class="p-6 bg-gray-50 rounded-2xl shadow-md mt-6">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">Menjadi IC yang Baik dan Benar</h2>
+      <p class="mb-4 text-gray-700">
+        Menurut <strong>David</strong>, sebagai Incident Commander (IC) hal yang terpenting adalah <strong>tegas</strong>. 
+        IC diberikan kewenangan tertinggi dalam suatu insiden, sehingga segala hal yang terjadi harus dalam sepersetujuan IC.
+      </p>
+    
+      <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Tanggung Jawab IC di Crime Scene</h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Wajib <strong>double check</strong> apakah seluruh evidence telah terkumpul (crime scene evidence, run plate, dsb).</li>
+        <li>Menentukan <strong>pursuit line up</strong>: siapa yang akan menjadi primary, secondary, alternate, dan juga securing hostage.</li>
+        <li>Tidak perlu kaku dalam memilih unit, pilih sesuai kemampuan kendaraan masing-masing officer, bukan pangkat.</li>
+      </ul>
+    
+      <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Selama Pengejaran</h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Sigap atas segala perubahan dan tindakan suspect.</li>
+        <li>Jika tindakan suspect membahayakan warga, IC harus memperhitungkan penggunaan <strong>spike trap</strong> atau <strong>PIT maneuver</strong>.</li>
+        <li><strong>Take tire</strong> hanya dilakukan jika situasi sudah tidak kondusif.</li>
+      </ul>
+    
+      <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Komunikasi</h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Jangan takut menegur unit yang melakukan kesalahan.</li>
+        <li>Jika ada officer yang menginterupsi radio dengan informasi tidak bermanfaat, IC harus tegas mengatakan <strong>“10-3”</strong>.</li>
+      </ul>
+    
+      <h3 class="text-xl font-semibold mt-4 mb-2 text-gray-800">Setelah Situasi Terkendali</h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Pastikan semua suspect diproses sesuai prosedur.</li>
+        <li>Pastikan MDT (Mobile Data Terminal) diselesaikan dengan rapi dan lengkap.</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>Quote</h2>
+      <div class="sticky">
+        <p>"Seorang IC harus tegas, sigap, menguasai situasi, berani mengambil keputusan, dan tidak takut menegur. IC bukan sekadar <em>Role</em>, tapi tanggung jawab penuh atas jalannya sebuah insiden." -David Reed</p>
+      </div>
     </section>
 
     <footer>
